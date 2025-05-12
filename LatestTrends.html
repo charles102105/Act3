@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechNewLogy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-emphasis text-dark">
+<header class="bg-emphasis text-primary py-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <h1 class="display-1 fw-bold">TechNewLogy</h1>
+        <p class="fw-bold lead mb-0 text-dark">"Where Tech Meets the Future."</p>
+        <p class="lead mb-0 text-dark">TechNewlogy is your digital gateway to the latest breakthroughs, trends, and insights in technology and artificial intelligence.</p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2 w-80 border-primary" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+<style>
+.card-hover {
+  text-decoration: none;
+  color: inherit;
+}
+.card-hover h6,
+.card-hover p {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+.card-hover h6::after,
+.card-hover p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+.card-hover:hover h6::after,
+.card-hover:hover p::after {
+  width: 100%;
+}
+.card-hover img {
+  transition: transform 0.3s ease;
+}
+.card-hover:hover img {
+  transform: scale(1.05);
+}
+.link-hover-warning {
+    color: #ffc107; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .link-hover-warning:hover {
+    color: #212529; 
+    text-decoration: underline;
+  }
+    .link-hover-underline {
+    text-decoration: none;
+    color: inherit;
+  }
+  .link-hover-underline:hover {
+    text-decoration: underline;
+  }
+  .navbar-nav .nav-link {
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+  <div class="container-fluid px-0">
+    <a class="navbar-brand d-flex align-items-center ps-3" href="mainpage.html">
+      <img src="TechBlog_Images/TN8.png" alt="Logo" width="80" height="60" class="me-2">
+      <p class="h6 mb-0 text-white">TechNewLogy</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ms-auto pe-3">
+  <li class="nav-item">
+    <a class="nav-link text-white" href="LatestTrends.html">Latest Trends</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#cars">Cars and Automobiles</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-white" href="#food">Food and Agriculture</a>
+  </li>
+</ul>
+    </div>
+  </div>
+</nav>
+<section class=" py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="display-2 fw-bold text-primary">Latest Trends</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <img src="TechBlog_Images/SMARTPHONE.jpg" class="img-fluid " alt="Featured">
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-4">
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb1">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">These investors are betting on Greece’s founders</h6>
+                <p class="mb-0 small">TC Video – 2 days ago</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb2">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">Greece is having a Big Tech moment</h6>
+                <p class="mb-0 small">TC Video – 2 days ago</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb3">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">A comprehensive list of 2025 tech layoffs</h6>
+                <p class="mb-0 small">Cody Corrall, Alyssa Stringer, Kate Park – 2 days ago</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb4">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">One of Elon Musk’s longtime VCs is suing his former employer…</h6>
+                <p class="mb-0 small">Julie Bort – 3 days ago</p>
+              </div>
+            </a>
+          </div>
+              <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb4">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">One of Elon Musk’s longtime VCs is suing his former employer…</h6>
+                <p class="mb-0 small">Julie Bort – 3 days ago</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class=" py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="display-2 fw-bold text-primary">AI</h2>
+    </div>
+      <div class="col-lg-6">
+        <div class="row g-4">
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 400px; height: 400px;" alt="Thumb1">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">These investors are betting on Greece’s founders</h6>
+                <p class="mb-0 small">TC Video – 2 days ago</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3"  style="width: 400px; height: 400px;" alt="Thumb2">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">Greece is having a Big Tech moment</h6>
+                <p class="mb-0 small">TC Video – 2 days ago</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3"  style="width: 400px; height: 400px;" alt="Thumb3">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">A comprehensive list of 2025 tech layoffs</h6>
+                <p class="mb-0 small">Cody Corrall, Alyssa Stringer, Kate Park – 2 days ago</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 d-flex">
+            <a href="#" class="d-flex card-hover w-100">
+              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3"  style="width: 400px; height: 400px;" alt="Thumb4">
+              <div>
+                <small class="text-uppercase">TechNewLogy</small>
+                <h6 class="fw-bold mb-1">One of Elon Musk’s longtime VCs is suing his former employer…</h6>
+                <p class="mb-0 small">Julie Bort – 3 days ago</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class=" py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="display-2 fw-bold text-primary">TECHNOLOGY</h2>
+    </div>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+         <div class="col">
+  <div class="card h-100 border-0 shadow-none">
+    <img src="TechBlog_Images/SMARTPHONE.jpg" class="card-img-top" alt="Honey Garlic">
+    <div class="card-body">
+      <h5 class="card-title">Honey Garlic</h5>
+      <p class="card-text">Sweet and savory with garlic flavor.</p>
+      <a href="#MAIN" class="btn btn-outline-warning btn-m">View Main Dish</a>
+    </div>
+  </div>
+</div>
+  <div class="col">
+  <div class="card h-100 border-0 shadow-none">
+    <img src="TechBlog_Images/SMARTPHONE.jpg" class="card-img-top" alt="Honey Garlic">
+    <div class="card-body">
+      <h5 class="card-title">Honey Garlic</h5>
+      <p class="card-text">Sweet and savory with garlic flavor.</p>
+      <a href="#MAIN" class="btn btn-outline-warning btn-m">View Main Dish</a>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100 border-0 shadow-none">
+    <img src="TechBlog_Images/SMARTPHONE.jpg" class="card-img-top" alt="Honey Garlic">
+    <div class="card-body">
+      <h5 class="card-title">Honey Garlic</h5>
+      <p class="card-text">Sweet and savory with garlic flavor.</p>
+      <a href="#MAIN" class="btn btn-outline-warning btn-m">View Main Dish</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</section>
+      <div class="modal fade" id="M1" tabindex="-1" aria-labelledby="M1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-between">
+              <h5 class="modal-title" id="M1Label">Honey Garlic</h5>
+              <button type="button" class="btn btn-outline-warning btn-sm" data-bs-dismiss="modal">Close</button>
+            </div>
+            <div class="modal-body">
+              <img src="FR_Images/MSALAKING.jpg" class="img-fluid rounded mb-3" alt="TCHONEYGARLIC">
+              <p>Flavorful and sticky boneless chicken glazed with honey and garlic—perfectly balanced sweetness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="mainpage.html">1</a></li>
+    <li class="page-item"><a class="page-link active" href="LatestTrends.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+  </section>
+    <footer class="bg-primary text-light py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+            <img src="TechBlog_Images/TN8.png" alt="NutriCraves Logo" width="150" height="120" class="img-fluid">
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <h5>ABOUT US</h5>
+                <ul class="list-unstyled">
+                  <li><b>Sharien Salarda | Charles Carillo</b></li>
+                  <li>At your service with NutriCraves</li>
+                  <li>
+                    <a href="Contact.html" class="link-hover-underline">
+                      <i class="bi bi-envelope-fill me-1"></i>Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6 mb-3">
+                <h5>RESTAURANTS SOCIAL MEDIA</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.facebook.com/thecrunchsouthcaloocan" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>The Crunch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/MugShotKape" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>MugShot
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/lavacrazeph" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Lava Craze
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/docwings" target="_blank" class="link-hover-underline">
+                      <i class="bi bi-facebook me-1"></i>Doc Wings
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="bg-secondary">
+        <p class="small text-center">
+          NutriCraves Food Guide Disclaimer: This information is for educational purposes only and not a substitute for medical advice. Please consult a healthcare professional for personalized nutrition guidance.
+        </p>
+        <p class="mb-0 mt-2 text-center">&copy; 2025 NutriCraves.All rights reserved</p>
+      </div>
+    </footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
