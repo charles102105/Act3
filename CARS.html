@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechNewLogy</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Test</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body class="bg-emphasis text-dark">
-<header class="bg-emphasis text-primary py-4">
+<header class="bg-primary text-white py-4">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-8">
         <h1 class="display-1 fw-bold">TechNewLogy</h1>
-        <p class="fw-bold lead mb-0 text-dark">"Where Tech Meets the Future."</p>
-        <p class="lead mb-0 text-dark">TechNewlogy is your digital gateway to the latest breakthroughs, trends, and insights in technology and artificial intelligence.</p>
+        <p class="fw-bold lead mb-0 text-white">"Where Tech Meets the Future."</p>
+        <p class="lead mb-0 text-white">TechNewlogy is your digital gateway to the latest breakthroughs, trends, and insights in technology and artificial intelligence.</p>
       </div>
       <div class="col-md-4 text-md-end mt-3 mt-md-0">
         <form class="d-flex" role="search">
-            <input class="form-control me-2 w-80 border-primary" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-primary" type="submit">Search</button>
+            <input class="form-control me-2 w-80 border-dark" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -78,7 +77,6 @@
   position: relative;
   transition: color 0.3s ease;
 }
-
 .navbar-nav .nav-link::after {
   content: "";
   position: absolute;
@@ -89,45 +87,63 @@
   background-color: white;
   transition: width 0.3s ease;
 }
-
 .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
+  .card-hover-effect {
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .card-hover-effect {
+    transform: scale(1.05);
+  }
+
+  .card:hover .card-title,
+  .card:hover .card-text {
+    text-decoration: underline;
+  }
+   .card,
+  .card-img-top {
+    border-radius: 0 !important;
+  }
 </style>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container-fluid px-0">
-    <a class="navbar-brand d-flex align-items-center ps-3" href="mainpage.html">
+    <a class="navbar-brand d-flex align-items-center ps-3" href="#">
       <img src="TechBlog_Images/TN8.png" alt="Logo" width="80" height="60" class="me-2">
       <p class="h6 mb-0 text-white">TechNewLogy</p>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav ms-auto pe-3">
-  <li class="nav-item">
-    <a class="nav-link text-white" href="LatestTrends.html">Latest Trends</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-white" href="#cars">Cars and Automobiles</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-white" href="#food">Food and Agriculture</a>
-  </li>
-</ul>
+      <ul class="navbar-nav ms-auto pe-3">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Latest Trends</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Cars and Automobiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Food and Agriculture</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
+
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="TechBlog_Images/SMARTPHONE.jpg" class="d-block w-100" alt="...">
+      <img src="TechBlog_Images/CAMPCAR.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="TechBlog_Images/SMARTPHONE.jpg" class="d-block w-100" alt="...">
+      <img src="TechBlog_Images/FIATSS.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="TechBlog_Images/SMARTPHONE.jpg" class="d-block w-100" alt="...">
+      <img src="TechBlog_Images/BRIGHT.png" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -139,131 +155,112 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<section class=" py-5">
+
+<section class="py-5">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h2 class="display-2 fw-bold text-primary">Latest Trends</h2>
+      <h2 class="display-2 fw-bold text-primary">LATEST CARS</h2>
     </div>
-    <div class="row g-4">
-      <div class="col-lg-6">
-        <img src="TechBlog_Images/SMARTPHONE.jpg" class="img-fluid " alt="Featured">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 border-0 shadow-none">
+              <img src="TechBlog_Images/CAMPCAR.png" class="card-img-top card-hover-effect" alt="Camp Car">
+              <div class="card-body">
+                <h5 class="card-title">Camp Car</h5>
+                <p class="card-text">Sweet and savory with garlic flavor.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 border-0 shadow-none">
+              <img src="TechBlog_Images/FIATSS.png" class="card-img-top card-hover-effect" alt="Fiat SS">
+              <div class="card-body">
+                <h5 class="card-title">Fiat SS</h5>
+                <p class="card-text">Sweet and savory with garlic flavor.</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 border-0 shadow-none">
+              <img src="TechBlog_Images/BRIGHT.png" class="card-img-top card-hover-effect" alt="Bright Car">
+              <div class="card-body">
+                <h5 class="card-title">Bright Car</h5>
+                <p class="card-text">Sweet and savory with garlic flavor.</p>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <div class="row g-4">
-          <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
-              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb1">
-              <div>
-                <small class="text-uppercase">TechNewLogy</small>
-                <h6 class="fw-bold mb-1">These investors are betting on Greece’s founders</h6>
-                <p class="mb-0 small">TC Video – 2 days ago</p>
+    </div>
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="display-2 fw-bold text-primary">TECHNOLOGY and EVs</h2>
+    </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 border-0 shadow-none">
+              <img src="TechBlog_Images/WIRELESS.jpg" class="card-img-top card-hover-effect" alt="Wireless Charging">
+              <div class="card-body">
+                <h5 class="card-title">Wireless EV charging</h5>
+                <p class="card-text">Convenient charging without cables.</p>
               </div>
-            </a>
-          </div>
-          <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
-              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb2">
-              <div>
-                <small class="text-uppercase">TechNewLogy</small>
-                <h6 class="fw-bold mb-1">Greece is having a Big Tech moment</h6>
-                <p class="mb-0 small">TC Video – 2 days ago</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 border-0 shadow-none">
+              <img src="TechBlog_Images/ELECTRIC CAR CHARGER.jpg" class="card-img-top card-hover-effect" alt="Diesel Generator">
+              <div class="card-body">
+                <h5 class="card-title">Diesel Generator Charging an EV</h5>
+                <p class="card-text">A controversial power backup solution.</p>
               </div>
-            </a>
-          </div>
-          <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
-              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb3">
-              <div>
-                <small class="text-uppercase">TechNewLogy</small>
-                <h6 class="fw-bold mb-1">A comprehensive list of 2025 tech layoffs</h6>
-                <p class="mb-0 small">Cody Corrall, Alyssa Stringer, Kate Park – 2 days ago</p>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="#" class="text-decoration-none text-dark">
+            <div class="card h-100 border-0 shadow-none">
+              <img src="TechBlog_Images/ROBOTBOTS.png" class="card-img-top card-hover-effect" alt="Autonomous Robots">
+              <div class="card-body">
+                <h5 class="card-title">Autonomous Charging Robots</h5>
+                <p class="card-text">Next-gen convenience in EV charging.</p>
               </div>
-            </a>
-          </div>
-          <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
-              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb4">
-              <div>
-                <small class="text-uppercase">TechNewLogy</small>
-                <h6 class="fw-bold mb-1">One of Elon Musk’s longtime VCs is suing his former employer…</h6>
-                <p class="mb-0 small">Julie Bort – 3 days ago</p>
-              </div>
-            </a>
-          </div>
-              <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
-              <img src="TechBlog_Images/SMARTPHONE.jpg" class="flex-shrink-0 me-3" style="width: 100px; height: 80px;" alt="Thumb4">
-              <div>
-                <small class="text-uppercase">TechNewLogy</small>
-                <h6 class="fw-bold mb-1">One of Elon Musk’s longtime VCs is suing his former employer…</h6>
-                <p class="mb-0 small">Julie Bort – 3 days ago</p>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
-
-
-<section class=" py-5">
-  <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-      <h2 class="display-2 fw-bold text-primary">TECHNOLOGY</h2>
-    </div>
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-         <div class="col">
-  <div class="card h-100 border-0 shadow-none">
-    <img src="TechBlog_Images/SMARTPHONE.jpg" class="card-img-top" alt="Honey Garlic">
-    <div class="card-body">
-      <h5 class="card-title">Honey Garlic</h5>
-      <p class="card-text">Sweet and savory with garlic flavor.</p>
-    </div>
-  </div>
-</div>
-  <div class="col">
-  <div class="card h-100 border-0 shadow-none">
-    <img src="TechBlog_Images/SMARTPHONE.jpg" class="card-img-top" alt="Honey Garlic">
-    <div class="card-body">
-      <h5 class="card-title">Honey Garlic</h5>
-      <p class="card-text">Sweet and savory with garlic flavor.</p>
-    </div>
-  </div>
-</div>
-<div class="col">
-  <div class="card h-100 border-0 shadow-none">
-    <img src="TechBlog_Images/SMARTPHONE.jpg" class="card-img-top" alt="Honey Garlic">
-    <div class="card-body">
-      <h5 class="card-title">Honey Garlic</h5>
-      <p class="card-text">Sweet and savory with garlic flavor.</p>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-  </div>
-</section>
-   
-</section>
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link">Previous</a>
+    <li class="page-item">
+      <a class="page-link" href="LatestTrends.html">Previous</a>
     </li>
     <li class="page-item"><a class="page-link" href="mainpage.html">1</a></li>
-    <li class="page-item"><a class="page-link active" href="LatestTrends.html">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="LatestTrends.html">2</a></li>
+    <li class="page-item"><a class="page-link active" href="CARS.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="Food.html">4</a></li>
     <li class="page-item">
-      <a class="page-link" href="#">Next</a>
+      <a class="page-link" href="Food.html">Next</a>
     </li>
   </ul>
 </nav>
   </section>
-    <footer class="bg-primary text-light py-4">
+    <footer class="bg-dark text-light py-4">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
@@ -320,6 +317,7 @@
     </footer>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
