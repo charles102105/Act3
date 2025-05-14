@@ -97,6 +97,76 @@
     text-decoration: underline;
     cursor: pointer;
   }
+    .storyline-container {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 1rem 0;
+    }
+
+    .story-card {
+      display: inline-block;
+      width: 300px;
+      margin-right: 1rem;
+      background-color: #111;
+      color: white;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      vertical-align: top;
+      white-space: normal;
+    }
+
+    .story-card:hover {
+      transform: scale(1.03);
+    }
+
+    .story-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .story-body {
+      padding: 1rem;
+    }
+
+    .story-category {
+      font-size: 0.8rem;
+      color: #aaa;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+
+    .story-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 3.2em;
+      line-height: 1.6em;
+    }
+
+    .story-title::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 2px;
+      background-color: #00ffcc;
+      margin-top: 0.5rem;
+    }
+
+    .story-meta {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 0.75rem;
+    }
+
+   
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -146,7 +216,7 @@
         <div class="row g-4">
           <div class="col-12">
             <div class="position-relative">
-              <img src="TechBlog_Images/SMARTPHONE.jpg" class="img-fluid w-100" style="width: 100px; height: 400px; object-fit: cover;" alt="Card 1" />
+              <img src="TechBlog_Images/CAMPCAR.png" class="img-fluid w-100" style="width: 100px; height: 400px; object-fit: cover;" alt="Card 1" />
               <div class="position-absolute bottom-0 start-0 p-3 bg-dark bg-opacity-75 w-100">
                 <small class="text-uppercase">Startups</small>
                 <h6 class="fw-bold mb-1 hover-underline">Congressman is investigating fintech Ramp’s attempt to win $25M federal contract</h6>
@@ -157,7 +227,7 @@
 
           <div class="col-12">
             <div class="position-relative">
-              <img src="TechBlog_Images/SMARTPHONE.jpg" class="img-fluid w-100" style="width: 100px; height: 400px; object-fit: cover;" alt="Card 1" />
+              <img src="TechBlog_Images/vertical.jpg" class="img-fluid w-100" style="width: 100px; height: 400px; object-fit: cover;" alt="Card 1" />
               <div class="position-absolute bottom-0 start-0 p-3 bg-dark bg-opacity-75 w-100">
                 <small class="text-uppercase">AI</small>
                 <h6 class="fw-bold mb-1 hover-underline">Google I/O 2025: How to watch all the AI and Android reveals</h6>
@@ -169,18 +239,56 @@
       </div>
     </div>
   </div>
+</section>
+<body class="text-white">
 
-  <div class="container my-5">
-    <h1 class="display-3 text-primary fw-bold mb-4 mt-4">Top Headlines</h1>
-    <div class="list-group">
-      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Sam Altman apparently does not respect olive oil</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Google launches new initiative to back startups building AI</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Saudi prince launches AI venture...</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Even a16z VCs say no one really knows what an AI agent is</a>
-      <a href="#" class="list-group-item list-group-item-action list-group-item-primary">InventWood’s stronger-than-steel wood</a>
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="display-3 fw-bold text-dark">Latest Technology now in 2025</h2>
+    </div>
+    <p class="text-muted">Catch up on trending topics</p>
+
+    <div class="storyline-container">
+      <a href="#" class="story-card">
+        <img src="TechBlog_Images/FIATSS.png" alt="Story 1" class="story-img">
+        <div class="story-body">
+          <div class="story-category">Transportation</div>
+          <div class="story-title">Tesla earnings wrap up: Elon Musk talks DOGE, Trump and tariffs, robotaxis, AI, and cheaper cars</div>
+          <div class="story-meta">27 Stories - Apr 22, 2025</div>
+        </div>
+      </a>
+
+      <a href="#" class="story-card">
+        <img src="TechBlog_Images/drones.png" alt="Story 2" class="story-img">
+        <div class="story-body">
+          <div class="story-category">AI</div>
+          <div class="story-title">Nvidia GTC 2025 updates: Blackwell Ultra, AI innovation, and two personal assistants revealed</div>
+          <div class="story-meta">33 Stories - Mar 17, 2025</div>
+        </div>
+      </a>
+
+        <a href="#" class="story-card">
+        <img src="TechBlog_Images/ROBOT CHARGER.jpg" alt="Story 2" class="story-img">
+        <div class="story-body">
+          <div class="story-category">AI</div>
+          <div class="story-title">Nvidia GTC 2025 updates: Blackwell Ultra, AI innovation, and two personal assistants revealed</div>
+          <div class="story-meta">33 Stories - Mar 17, 2025</div>
+        </div>
+      </a>
+
+        <a href="#" class="story-card">
+        <img src="TechBlog_Images/chat.jpg" alt="Story 2" class="story-img">
+        <div class="story-body">
+          <div class="story-category">AI</div>
+          <div class="story-title">Nvidia GTC 2025 updates: Blackwell Ultra, AI innovation, and two personal assistants revealed</div>
+          <div class="story-meta">33 Stories - Mar 17, 2025</div>
+        </div>
+      </a>
     </div>
   </div>
-</section>
+
+</body>
+ 
 
 <section class="mt-4">
   <nav aria-label="Page navigation example">
@@ -232,17 +340,12 @@
     <p class="mb-0 mt-2 text-center">&copy; 2025 NutriCraves. All rights reserved</p>
   </div>
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
-<!-- ✅ This script auto-closes the dropdown menu when a nav-link is clicked or when clicked outside -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const navbarToggler = document.querySelector('.navbar-toggler');
     const navbarCollapse = document.querySelector('.navbar-collapse');
-
-    // Close when clicking nav-links
     document.querySelectorAll('.navbar-nav .nav-link').forEach(function (link) {
       link.addEventListener('click', function () {
         const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
@@ -251,8 +354,6 @@
         bsCollapse.hide();
       });
     });
-
-    // Close when clicking outside
     document.addEventListener('click', function (event) {
       const isClickInside = navbarCollapse.contains(event.target) || navbarToggler.contains(event.target);
       if (!isClickInside && navbarCollapse.classList.contains('show')) {
