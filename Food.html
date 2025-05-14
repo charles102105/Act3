@@ -96,6 +96,7 @@
 .navbar-nav .nav-link:hover::after {
   width: 100%;
 }
+
 </style>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -143,7 +144,7 @@
       <div class="col-lg-6">
         <div class="row g-4">
           <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
+            <a href="#" class="d-flex card-hover w-100" data-bs-toggle="modal" data-bs-target="#modal1">
               <img src="TechBlog_Images/Robotics.jpg"
                    style="width: 150px; height: 150px; object-fit: cover;"
                    class="flex-shrink-0 me-3"
@@ -151,12 +152,12 @@
               <div>
                 <small class="text-uppercase text-primary">TechNewLogy</small>
                 <h6 class="fw-bold mb-1">Robotics24 – Agribot: Robotics is the Key to Agriculture 4.0</h6>
-                <p class="mb-0 small">An in-depth look at how agribots are transforming modern agriculture, accompanied by illustrative images. — Open Knowledge FAO<br>TC Video – 2 days ago</p>
+                <p class="mb-0 small">An in-depth look at how agribots are transforming modern agriculture. — TC Video<br>2 days ago</p>
               </div>
             </a>
           </div>
           <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
+            <a href="#" class="d-flex card-hover w-100" data-bs-toggle="modal" data-bs-target="#modal2">
               <img src="TechBlog_Images/Motors.avif"
                    style="width: 150px; height: 150px; object-fit: cover;"
                    class="flex-shrink-0 me-3"
@@ -164,12 +165,12 @@
               <div>
                 <small class="text-uppercase text-primary">TechNewLogy</small>
                 <h6 class="fw-bold mb-1">Maxon Group – DC Motors in Agriculture 4.0</h6>
-                <p class="mb-0 small">This article discusses the role of DC motors in agricultural robotics and features images of autonomous robots used in farming. — Open Knowledge FAO<br>TC Video – 2 days ago</p>
+                <p class="mb-0 small">This article discusses the role of DC motors in agricultural robotics and features images of autonomous robots used in farming. — TC Video<br>2 days ago</p>
               </div>
             </a>
           </div>
           <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
+            <a href="#" class="d-flex card-hover w-100" data-bs-toggle="modal" data-bs-target="#modal3">
               <img src="TechBlog_Images/Investor.jpg"
                    style="width: 150px; height: 150px; object-fit: cover;"
                    class="flex-shrink-0 me-3"
@@ -177,12 +178,12 @@
               <div>
                 <small class="text-uppercase text-primary">TechNewLogy</small>
                 <h6 class="fw-bold mb-1">Agri Investor – Robotics and Automation in Food and Agriculture</h6>
-                <p class="mb-0 small">This article explores how automation is set to disrupt the food and agriculture sectors, including images of robotic systems in action. — Cody Corrall<br>Cody Corrall – 2 days ago</p>
+                <p class="mb-0 small">This article explores how automation is set to disrupt the food and agriculture sectors, including images of robotic systems in action. — Cody Corrall<br>2 days ago</p>
               </div>
             </a>
           </div>
           <div class="col-12 d-flex">
-            <a href="#" class="d-flex card-hover w-100">
+            <a href="#" class="d-flex card-hover w-100" data-bs-toggle="modal" data-bs-target="#modal4">
               <img src="TechBlog_Images/Harvestors.jpg"
                    style="width: 150px; height: 150px; object-fit: cover;"
                    class="flex-shrink-0 me-3"
@@ -200,28 +201,75 @@
   </div>
 </section>
 
-<!-- FULL CODE CONTINUED FROM ABOVE -->
+<!-- Modal for Robotics -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">Robotics24 – Agribot: Robotics in Agriculture</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="TechBlog_Images/Robotics.jpg" class="img-fluid" alt="Robotics Agribot">
+        <p>Agribots are revolutionizing agriculture with tasks like precision planting, automated weeding, and real-time data collection.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="CARS.html">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="mainpage.html">1</a></li>
-    <li class="page-item"><a class="page-link" href="LatestTrends.html">2</a></li>
-    <li class="page-item"><a class="page-link" href="CARS.html">3</a></li>
-    <li class="page-item"><a class="page-link active" href="Food.html">4</a></li>
-    <li class="page-item">
-      <a class="page-link disabled">Next</a>
-    </li>
-  </ul>
-</nav>
+<!-- Modal for DC Motors -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Label">Maxon Group – DC Motors in Agriculture 4.0</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="TechBlog_Images/Motors.avif" class="img-fluid" alt="Maxon Motors">
+        <p>DC motors play an essential role in powering autonomous robots and robotic arms used in smart farming technologies.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Modal for Agri Investor -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Label">Agri Investor – Robotics and Automation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="TechBlog_Images/Investor.jpg" class="img-fluid" alt="Agri Investor Robotics">
+        <p>Robotics and automation are reshaping the agricultural sector, making farming more efficient and sustainable.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Harvestors -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal4Label">The Robotic Harvestors</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="TechBlog_Images/Harvestors.jpg" class="img-fluid" alt="Robotic Harvestors">
+        <p>These AI-powered harvesters improve harvesting efficiency and help reduce labor costs in farming.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer Section Start -->
 <footer class="bg-dark text-light py-4">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
-        <img src="TechBlog_Images/TN8.png" alt="NutriCraves Logo" width="150" height="120" class="img-fluid">
+        <img src="TechBlog_Images/TN8.png" alt="TechNewLogy Logo" width="150" height="120" class="img-fluid">
       </div>
       <div class="col-md-9">
         <div class="row">
@@ -229,7 +277,7 @@
             <h5>ABOUT US</h5>
             <ul class="list-unstyled">
               <li><b>Sharien Salarda | Charles Carillo</b></li>
-              <li>At your service with NutriCraves</li>
+              <li>At your service with TechNewLogy</li>
               <li>
                 <a href="Contact.html" class="link-hover-underline">
                   <i class="bi bi-envelope-fill me-1"></i>Contact Us
@@ -238,26 +286,21 @@
             </ul>
           </div>
           <div class="col-md-6 mb-3">
-            <h5>RESTAURANTS SOCIAL MEDIA</h5>
+            <h5>SOCIAL MEDIA</h5>
             <ul class="list-unstyled">
               <li>
-                <a href="https://www.facebook.com/thecrunchsouthcaloocan" target="_blank" class="link-hover-underline">
-                  <i class="bi bi-facebook me-1"></i>The Crunch
+                <a href="https://www.facebook.com/TechNewLogy" target="_blank" class="link-hover-underline">
+                  <i class="bi bi-facebook me-1"></i>Facebook
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/MugShotKape" target="_blank" class="link-hover-underline">
-                  <i class="bi bi-facebook me-1"></i>MugShot
+                <a href="https://twitter.com/TechNewLogy" target="_blank" class="link-hover-underline">
+                  <i class="bi bi-twitter me-1"></i>Twitter
                 </a>
               </li>
               <li>
-                <a href="https://www.facebook.com/lavacrazeph" target="_blank" class="link-hover-underline">
-                  <i class="bi bi-facebook me-1"></i>Lava Craze
-                </a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/docwings" target="_blank" class="link-hover-underline">
-                  <i class="bi bi-facebook me-1"></i>Doc Wings
+                <a href="https://www.instagram.com/TechNewLogy" target="_blank" class="link-hover-underline">
+                  <i class="bi bi-instagram me-1"></i>Instagram
                 </a>
               </li>
             </ul>
@@ -267,22 +310,12 @@
     </div>
     <hr class="bg-secondary">
     <p class="small text-center">
-      NutriCraves Food Guide Disclaimer: This information is for educational purposes only and not a substitute for medical advice. Please consult a healthcare professional for personalized nutrition guidance.
+      TechNewLogy Disclaimer: This content is for informational purposes only and not a substitute for professional advice. Please consult experts for personalized guidance.
     </p>
-    <p class="mb-0 mt-2 text-center">&copy; 2025 NutriCraves. All rights reserved</p>
+    <p class="mb-0 mt-2 text-center">&copy; 2025 TechNewLogy. All rights reserved</p>
   </div>
 </footer>
-
-<script>
-  function hideNavbar() {
-    var myCollapse = document.getElementById('navbarNav');
-    var bsCollapse = new bootstrap.Collapse(myCollapse, {
-      toggle: false
-    });
-    bsCollapse.hide();
-  }
-</script>
+<!-- Footer Section End -->
 
 </body>
 </html>
-
